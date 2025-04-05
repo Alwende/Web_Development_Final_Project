@@ -177,3 +177,89 @@ footer {
     color: #777;
     margin-top: 0.3em;
 }
+
+/* ... existing styles ... */
+
+/* Sample Projects Section */
+.sample-projects {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sample-projects h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.project-item {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Clip image corners */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent extra space below image */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    aspect-ratio: 16 / 9; /* Maintain image aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+}
+
+.project-item h3 {
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+.project-item p {
+    margin: 0 15px 15px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.project-item .sector {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 10px 15px;
+}
+
+/* You can add more specific styling for different sectors if needed */
+.project-item.banking .sector {
+    background-color: #28a745; /* Example banking color */
+}
+
+.project-item.construction .sector {
+    background-color: #dc3545; /* Example construction color */
+}
+
+.project-item.ict .sector {
+    background-color: #ffc107; /* Example ICT color */
+    color: #333;
+}
+
+.project-item.retail .sector {
+    background-color: #6c757d; /* Example retail color */
+}
+
+/* Responsive adjustments for the project grid */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
