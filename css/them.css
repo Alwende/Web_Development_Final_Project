@@ -1,0 +1,115 @@
+/* Example Theme Styles - Refined Color Palette */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+    line-height: 1.2;
+    color: #343a40; /* Ensure headings use the main text color */
+}
+
+.site-header {
+    background-color: #0056b3; /* Primary Blue */
+}
+
+.hero {
+    background-color: #e9ecef; /* Light Gray */
+    color: #343a40; /* Main Text Color */
+}
+
+.featured-section h2, .latest-section h2, .call-to-action h2, .sample-projects h2 {
+    border-bottom-color: #0056b3; /* Primary Blue */
+}
+
+.read-more {
+    color: #28a745; /* Accent Green */
+    font-weight: bold;
+}
+
+.call-to-action {
+    background-color: #f8f9fa; /* Light Gray Background */
+    border: 1px solid #6c757d; /* Secondary Gray for subtle border */
+}
+
+.button.primary {
+    background-color: #28a745; /* Accent Green */
+    color: white;
+    border: none;
+}
+
+.button.primary:hover {
+    background-color: #1e7e34; /* Darker shade of Accent Green for hover */
+}
+
+.site-footer {
+    background-color: #343a40; /* Dark Gray */
+}
+
+.site-footer a {
+    color: #adb5bd; /* Light Gray-Blue for footer links */
+}
+
+.site-footer a:hover {
+    color: white;
+}
+
+/* You might need to adjust other elements that had the old green color */
+.project-item .sector {
+    background-color: #6c757d; /* Secondary Gray for sector tags */
+    color: white;
+}
+
+/* Example adjustments for sector tags if you want to keep some color differentiation */
+.project-item.banking .sector {
+    background-color: #007bff; /* A brighter blue */
+}
+
+.project-item.construction .sector {
+    background-color: #dc3545; /* A red tone */
+}
+
+.project-item.ict .sector {
+    background-color: #ffc107; /* A yellow tone */
+    color: #333;
+}
+
+.project-item.retail .sector {
+    background-color: #6f42c1; /* A purple tone */
+}
+
+/* Hero Images */
+.podcast-hero-image,
+.insights-hero-image,
+.hero-image {
+    margin-bottom: 1.5em;
+}
+
+.podcast-hero-image img,
+.insights-hero-image img,
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.author-info .profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image fills the circle without distortion */
+    margin-right: 1em;
+    float: left; /* Float left to wrap text around it */
+    margin-bottom: 0.5em; /* Add some space below */
+}
+
+.author-info p {
+    overflow: hidden; /* Prevent text from overlapping floated image */
+}

@@ -5,52 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Project Navigator - Expert Insights</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=67f1c4fbbc16930012085c15&product=sticky-share-buttons' async='async'></script>
 </head>
 <body>
-    <header>
-        <h1>The Project Navigator</h1>
-        <p class="tagline">Guiding You Through the World of Project Management</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="insights.html" class="active">Expert Insights</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">The Project Navigator</a>
+            </div>
+            <p class="tagline">Unlock proven techniques and practical guidance to master project lifecycles, lead high-performing teams, and achieve your project goals across diverse industries.</p>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="insights.html">Expert Insights</a></li>
+                    <li><a href="portfolio.html">Project Portfolio</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="expert-insights-list">
-            <h2>Expert Insights on Project Management</h2>
+    <main class="site-main container">
+        <h1>Expert Insights</h1>
+        <div class="insights-hero-image">
+            <img src="images/experts.jpg" alt="Expert insights and collaboration">
+        </div>
+        <p class="insights-intro">This section features valuable articles and perspectives from leading experts in the field of project management. Explore diverse viewpoints and gain deeper knowledge from experienced professionals.</p>
 
-            <article>
-                <h3>The Future of Agile Project Management</h3>
-                <p>An insightful article by [Industry Expert 1 Name], exploring emerging trends and best practices in Agile methodologies.</p>
-                <p class="author">By [Industry Expert 1 Name] | [Date]</p>
-                <a href="#">Read More</a>
+        <section class="expert-articles-list">
+            <h2>Featured Experts</h2>
+
+            <article class="expert-article">
+                <h3><a href="#">The Future of Agile Project Management</a></h3>
+                <p>An insightful article by Dan Alwende exploring emerging trends and best practices in Agile methodologies.</p>
+                <p class="meta">By Dan Alwende | Published on 4th April 2025</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="sharethis-inline-share-buttons"></div>
             </article>
 
-            <article>
-                <h3>Leveraging Data Analytics for Better Project Outcomes</h3>
-                <p>A thought-provoking piece by [Industry Expert 2 Name] on how data-driven insights can improve project planning and execution.</p>
-                <p class="author">By [Industry Expert 2 Name] | [Date]</p>
-                <a href="#">Read More</a>
+            <article class="expert-article">
+                <h3><a href="#">Leveraging Data Analytics for Better Project Outcomes</a></h3>
+                <p>A thought-provoking piece by Collins Owino on how data-driven insights can improve project planning and execution.</p>
+                <p class="meta">By Collins Owino | Published on 5th April 2025</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="sharethis-inline-share-buttons"></div>
             </article>
 
-            <article>
-                <h3>The Importance of Emotional Intelligence in Leading Project Teams</h3>
-                <p>A valuable perspective from [Industry Expert 3 Name] on the crucial role of EQ in effective project leadership.</p>
-                <p class="author">By [Industry Expert 3 Name] | [Date]</p>
-                <a href="#">Read More</a>
-            </article>
-
-            <p>Stay tuned for more expert insights and articles!</p>
+            <p class="more-insights">Stay tuned for more expert insights and articles!</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 The Project Navigator</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 The Project Navigator | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

@@ -7,259 +7,422 @@ body {
     line-height: 1.6;
 }
 
-header {
+.container {
+    max-width: 1140px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
     background-color: #333;
     color: white;
     padding: 1em 0;
-    text-align: center;
 }
 
-nav ul {
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tagline {
+    color: #ddd;
+    margin-top: 0.3em;
+    font-style: italic;
+}
+
+.main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1em;
+.main-nav ul li {
+    margin-left: 1.5em;
 }
 
-nav a {
+.main-nav ul li:first-child {
+    margin-left: 0;
+}
+
+.main-nav a {
     color: white;
     text-decoration: none;
+    padding: 0.5em 0;
 }
 
-nav a.active {
+.main-nav a.active {
     font-weight: bold;
     border-bottom: 2px solid white;
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.site-main {
+    padding: 30px 0;
 }
 
 .hero {
     text-align: center;
-    padding: 2em 0;
-    margin-bottom: 20px;
+    padding: 4em 0;
+    margin-bottom: 30px;
     background-color: #e9ecef;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
-.featured-articles h2,
-.latest-posts h2,
-.about-content h2,
-.contact-form h2,
-.contact-info h2 {
+.featured-section, .latest-section, .call-to-action, .sample-projects {
+    margin-bottom: 40px;
+}
+
+.featured-section h2, .latest-section h2, .call-to-action h2, .sample-projects h2 {
     border-bottom: 2px solid #ccc;
     padding-bottom: 0.5em;
-    margin-bottom: 1em;
-}
-
-article {
     margin-bottom: 1.5em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #eee;
 }
 
-article:last-child {
-    border-bottom: none;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Increase from 20px */
 }
 
-.about-content p {
+.latest-article, .featured-article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.latest-article h3, .featured-article h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+}
+
+.latest-article h3 a, .featured-article h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.latest-article p, .featured-article p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.7;
+}
+
+.meta {
+    display: block;
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 0.5em;
     margin-bottom: 1em;
 }
 
-.contact-form {
-    margin-bottom: 2em;
+.read-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 1em;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.call-to-action {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 3em 0;
+    border-radius: 8px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.subscribe-form {
+    margin-top: 20px;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-    width: calc(100% - 12px);
-    padding: 8px;
+.subscribe-form input[type="email"] {
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    width: 300px;
+    max-width: 100%;
 }
 
-.form-group .error-message {
-    color: red;
-    font-size: 0.9em;
-    margin-top: 5px;
-}
-
-.contact-form button[type="submit"] {
+.subscribe-form button.primary {
     background-color: #007bff;
     color: white;
-    padding: 10px 15px;
     border: none;
+    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
+    margin-left: 10px;
 }
 
-.contact-form button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-.contact-info p {
-    margin-bottom: 0.5em;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
+.site-footer {
     background-color: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.social-links a {
+    margin: 0 0.8em;
+    font-size: 1.2em;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 0.5em 0;
+
+/* Small Screens (Phones) - Up to 576px */
+@media (max-width: 576px) {
+    .container {
+        width: 90%; /* Further reduce container width on small phones */
     }
 
-    main {
-        margin: 10px;
-        padding: 15px;
+    .site-header .container {
+        flex-direction: column; /* Stack logo and nav on phones */
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 1em;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul li {
+        margin: 0.5em 0;
+        display: block; /* Ensure full width for nav items */
     }
 
     .hero {
-        padding: 1.5em 0;
+        padding: 2em 1.5em;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .featured-grid, .latest-grid, .project-grid {
+        grid-template-columns: 1fr; /* Single column on phones */
+    }
+
+    .author-info {
+        text-align: center; /* Center author info on mobile */
+    }
+
+    .author-info .profile-pic {
+        float: none;
+        margin: 0 auto 1em; /* Center profile pic */
+        display: block;
     }
 }
-/* ... existing styles ... */
 
-.tagline {
-    color: #ddd;
-    margin-top: 0.5em;
-    font-style: italic;
+/* Medium Screens (Tablets) - 577px to 768px (Your existing rule, slightly adjusted) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container {
+        width: 85%; /* Slightly wider than phones */
+    }
+
+    .main-nav ul {
+        /* Keep horizontal but potentially adjust spacing */
+        justify-content: center; /* Center navigation on tablets */
+    }
+
+    .main-nav ul li {
+        margin: 0 0.8em;
+    }
+
+    .featured-grid, .latest-grid, .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns often work well on tablets */
+    }
+
+    .hero {
+        padding: 3em 2em;
+        text-align: center;
+    }
 }
 
-.expert-article {
-    background-color: #f9f9f9;
-    padding: 1em;
-    border-left: 3px solid #007bff; /* Highlight for expert content */
-    margin-bottom: 1.5em;
-    border-bottom: 1px solid #eee;
+/* Large Screens (Desktops) - 769px to 1199px (Mostly your base styles will apply here) */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .container {
+        width: 75%; /* Adjust container width for desktops if needed */
+    }
+
+    .main-nav ul {
+        justify-content: flex-end; /* Align nav to the right on desktop */
+    }
+
+    .main-nav ul li {
+        margin: 0 1em;
+    }
+
+    .featured-grid, .latest-grid, .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two or three columns depending on content */
+    }
 }
 
-.expert-insights-list article {
+/* Extra Large Screens (Wide Desktops) - 1200px and Up */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px; /* Keep your original max-width for large desktops */
+        width: 80%; /* Slightly wider container on very large screens */
+        margin: 0 auto; /* Ensure centering */
+    }
+
+    /* You might want to make subtle adjustments for very wide screens, like increasing font sizes slightly or adjusting grid layouts */
+    /* Example: */
+    /* h1 { */
+    /* font-size: 3.5em; */
+    /* } */
+}
+
+/* Podcast Page Styles */
+.podcast-intro {
     margin-bottom: 2em;
+    color: #555;
+}
+
+.live-podcast-section {
+    margin-bottom: 3em;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.archived-episodes {
+    margin-bottom: 3em;
+}
+
+.episode-list {
+    list-style: none;
+    padding: 0;
+}
+
+.episode-item {
+    margin-bottom: 1.5em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid #eee;
 }
 
-.expert-insights-list article .author {
-    font-size: 0.9em;
+.episode-item:last-child {
+    border-bottom: none;
+}
+
+.episode-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-size: 1.1em;
+}
+
+.episode-item .meta {
+    display: block;
+    font-size: 0.8em;
     color: #777;
-    margin-top: 0.3em;
+    margin-bottom: 0.5em;
 }
 
-/* ... existing styles ... */
-
-/* Sample Projects Section */
-.sample-projects {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.sample-projects h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.5em;
-    margin-bottom: 1.5em;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px;
-}
-
-.project-item {
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Clip image corners */
-}
-
-.project-item img {
-    width: 100%;
-    height: auto;
-    display: block; /* Prevent extra space below image */
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    aspect-ratio: 16 / 9; /* Maintain image aspect ratio */
-    object-fit: cover; /* Cover the container without distortion */
-}
-
-.project-item h3 {
-    margin: 15px;
-    font-size: 1.2em;
-}
-
-.project-item p {
-    margin: 0 15px 15px;
-    font-size: 0.95em;
-    color: #555;
-}
-
-.project-item .sector {
+.listen-button {
     display: inline-block;
     background-color: #007bff;
     color: white;
-    padding: 5px 10px;
+    padding: 8px 15px;
     border-radius: 4px;
-    font-size: 0.8em;
-    margin: 10px 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 0.5em;
 }
 
-/* You can add more specific styling for different sectors if needed */
-.project-item.banking .sector {
-    background-color: #28a745; /* Example banking color */
+.listen-button:hover {
+    background-color: #0056b3;
 }
 
-.project-item.construction .sector {
-    background-color: #dc3545; /* Example construction color */
+.subscribe-section {
+    text-align: center;
 }
 
-.project-item.ict .sector {
-    background-color: #ffc107; /* Example ICT color */
+.podcast-platforms {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.podcast-platforms li {
+    display: inline;
+    margin: 0 1em;
+}
+
+.podcast-platforms a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.podcast-platforms a:hover {
+    text-decoration: underline;
+}
+
+/* Search Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust spacing as needed */
+    position: relative; /* Needed for absolute positioning of results */
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#search-results {
+    position: absolute; /* Position results below the input */
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it's above other elements */
+    display: none; /* Hidden by default */
+}
+
+#search-results li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
     color: #333;
 }
 
-.project-item.retail .sector {
-    background-color: #6c757d; /* Example retail color */
-}
-
-/* Responsive adjustments for the project grid */
-@media (max-width: 600px) {
-    .project-grid {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
+#search-results li a:hover {
+    background-color: #eee;
 }
