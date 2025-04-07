@@ -35,7 +35,27 @@
         <h1>Get in Touch</h1>
         <p>Have a project management question, a suggestion for the blog, or just want to connect? Feel free to reach out using the form below!</p>
         <section class="contact-form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScssOxju84DwWGnb52Lkdce-aXWG_lRYITgC5fngfxPQ7z4kA/viewform?embedded=true" width="100%" height="991" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <form id="contactForm" method="POST" action="https://formspree.io/f/xqapgpve">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                <input type="hidden" name="_subject" value="New Contact Form Submission from Your Website">
+                <input type="text" name="_honey" style="display:none">
+                <button type="submit" class="button primary">Send Message</button>
+                <div id="submissionMessage" class="submission-message"></div>
+            </form>
         </section>
 
         <section class="contact-info">
